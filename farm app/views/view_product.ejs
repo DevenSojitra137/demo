@@ -1,0 +1,28 @@
+<table border="1" align="center" width="50%">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Details</th>
+        <th>Price</th>
+        <th>Qty</th>
+    </tr>
+    <tr align="center">
+        <%result.forEach(function(user){%>
+            <td>
+               <%= user.id%> 
+            </td>
+            <td>
+                <%= user.name%> 
+             </td>
+             <td>
+                <%= user.details%> 
+             </td>
+             <td>
+                <%= user.price%> 
+             </td>
+             <td>
+                <%= user.qty%> 
+             </td>
+         <%})%>
+    </tr>
+</table>

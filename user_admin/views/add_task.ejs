@@ -1,0 +1,41 @@
+<form method="post">
+    <tr>
+        <td>
+            Select user:
+        </td>
+        <td>
+            <select name="user_id">
+                <option selected disabled>Select User</option>
+                <% result.forEach(function(user){%>
+                    <option value="<%= user.id %>"><%= user.name%></option>
+                <%})%>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Task Name:
+        </td>
+        <td>
+            <input type="text" name="task">
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" value="add"></td>
+    </tr>
+</form>
+
+<table>
+    <tr>
+        <th>Task_id</th>
+        <th>User_id</th>
+        <th>Task_name</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <%result.forEach,(function(user){>
+            <td></td>
+        <})%>
+    </tr>
+</table>

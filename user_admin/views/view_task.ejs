@@ -1,0 +1,16 @@
+<table border="1">
+    <tr>
+        <th>Task_id</th>
+        <th>User_id</th>
+        <th>Task_name</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <%result.forEach(function(user){%>
+            <td><%= user.task_id%></td>
+            <td><%= user.userid%></td>
+            <td><%= user.Taskname%></td>
+            <td><%= user.status%></td>
+        <%})%>
+    </tr>
+</table>

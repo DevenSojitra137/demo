@@ -1,0 +1,35 @@
+<% result.forEach(function(std_result){ %>
+<form method="post">
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" name="name" value="<%= std_result.name%>" /></td>
+    </tr>
+    <tr>
+      <td>sub1:</td>
+      <td><input type="text" name="sub1" value="<%= std_result.sub1%>"/></td>
+    </tr>
+    <tr>
+      <td>sub2:</td>
+      <td><input type="text" name="sub2" value="<%= std_result.sub2%>"/></td>
+    </tr>
+    <tr>
+      <td>sub3:</td>
+      <td><input type="text" name="sub3" value="<%= std_result.sub3%>"/></td>
+    </tr>
+    <tr>
+      <td>sub4:</td>
+      <td><input type="text" name="sub4" value="<%= std_result.sub4%>"/></td>
+    </tr>
+    <tr>
+      <td>sub5:</td>
+      <td><input type="text" name="sub5" value="<%= std_result.sub5%>"/></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="save" id="" /></td>
+    </tr>
+  </table>
+</form>
+<% }); %>
+
